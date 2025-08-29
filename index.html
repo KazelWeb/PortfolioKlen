@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klen's GameDev Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Klen's Experience<span class="neon-glow">.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Spawn Point</a></li>
+                    <li><a href="#portfolio">Game Builds</a></li>
+                    <li><a href="#about">Player Profile</a></li>
+                    <li><a href="#contact">Join Server</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-gamepad"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1 class="glitch" data-text="Epic Lua Scripter">Lua Scripter</h1>
+            <p>Crafting immersive Roblox experiences with pixel-perfect code and high-octane gameplay mechanics.</p>
+            <a href="#portfolio" class="hero-btn">Check My Past works! (Past 10 days works)</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Epic Solo Scripting!</h2>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="CraftSystem.PNG" alt="Roblox game UI with dynamic HUD and sleek design" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Optimized Craft System!</h3>
+                        <p>You craft things inventory-based logic</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="InventorySystem.PNG" alt="Combat system with fluid animations and particle effects" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Robus inventory system!</h3>
+                        <p>Has consistent datastore and is backpack-based!</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="NPCSystem.PNG" alt="DataStore system for player progression and inventory" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Attacking NPC, robust and dynamic!</h3>|
+                        <p>Can make NPC skills, pathfind, FX, regeneration, Fair Logic</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="ORganized.PNG" alt="Custom Roblox environment with immersive world design" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Hierarchy Organization</h3>
+                        <p>Proper foldering of modules and scripts!</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="Shop System.PNG" alt="In-game shop with seamless purchase system" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>In-Game Shop</h3>
+                        <p>Seamless Roblox shop system with smooth transactions and dynamic item displays.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="QuestSystem.PNG" alt="Custom particle effects for Roblox abilities" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Advanced quest system!</h3>
+                        <p>The kind of quest system I've never seen made.</p>
+                    </div>
+                </div>
+                   <!-- Project 7 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="StatsSystem.PNG" alt="In-game shop with seamless purchase system" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Combat/Any logic Stats System!</h3>
+                        <p>This is a stats system.</p>
+                    </div>
+                </div>
+
+                         <!-- Project 8 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="SelectionVoting.PNG" alt="In-game shop with seamless purchase system" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Selection/Voting System!</h3>
+                        <p>Votes and teleports player on a map, can combine with combat logics and team logics.</p>
+                    </div>
+                </div>
+
+                         <!-- Project 9 -->
+                         <div class="portfolio-item">
+                            <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                                <img src="SkillSystem.PNG" alt="In-game shop with seamless purchase system" onerror="this.style.display='none'" />
+                                <div class="portfolio-overlay">
+                                    <span class="overlay-text">Enlarge</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3>Skills System, can do with combat, weapon type, class type, any logic.</h3>
+                                <p>Very smooth and dynamic logic with skills.</p>
+                            </div>
+                        </div>
+
+                                 <!-- Project 10 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image" onclick="openModal(this.querySelector('img').src)">
+                        <img src="DataStoreCustomization.PNG" alt="In-game shop with seamless purchase system" onerror="this.style.display='none'" />
+                        <div class="portfolio-overlay">
+                            <span class="overlay-text">Enlarge</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>A Data Store!!</h3>
+                        <p>Customized datastore, can based on client's desire of handling datastore. Can store anything!</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="soul6.jpg" alt="Roblox scripter coding in a high-tech gaming setup" onerror="this.style.display='none'" />
+                </div>
+                <div class="about-text">
+                    <h2>About Klen!</h2>
+                    <p>I’m Klen, a Lua scripter with 1.5 years of grinding in the Roblox dev scene. I’ve leveled up my skills to craft epic basic-to-intermediate systems that bring games to life.</p>
+                    <p>From scripting slick tools and UIs to designing intense combat mechanics and player systems, I know the Roblox engine like the back of my hand.</p>
+                    <p>Mastered DataStores to lock in player stats, inventories, and progression—ensuring no save gets corrupted.</p>
+                    <p>Ready to join your dev team and build the next big Roblox hit? Let’s crank out some legendary gameplay!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact me</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Ready to Team Up?</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Roblox: Klenshuiu</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord: sronai</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: unkxzell@gmail.com</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Klen's CodeBase - Powered by Lua - 2025</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged game build screenshot" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1fd52457-a063-46ca-85c6-5493e264bfce.png">
+            <button class="close-modal" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe portfolio items
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Image Modal Functions
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            
+            modalImage.src = imageSrc;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
